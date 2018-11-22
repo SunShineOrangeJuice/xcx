@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/shouye/shouye",
+    "pages/goodsdetail/goodsdetail",
+    "pages/search/search",
+    "pages/pagedetail/pagedetail",
+    "pages/shopcar/shopcar",
+    "pages/address/address",
+    "pages/personal/personal",
+    "pages/addaddress/addaddress",
+    "pages/confirmorder/confirmorder",
+    "pages/ceshi/ceshi"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "南京贵为",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_pressed.png"
+      },
+      {
+        "pagePath": "pages/goodsdetail/goodsdetail",
+        "text": "商品",
+        "iconPath": "images/goods.png",
+        "selectedIconPath": "images/goods_pressed.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "images/shopcar.png",
+        "selectedIconPath": "images/shopcar_pressed.png"
+      },
+      {
+        "pagePath": "pages/confirmorder/confirmorder",
+        "text": "会员中心",
+        "iconPath": "images/geren.png",
+        "selectedIconPath": "images/geren_pressed.png"
+      }
+    ]
+  }
+}

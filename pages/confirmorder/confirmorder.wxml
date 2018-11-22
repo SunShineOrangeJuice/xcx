@@ -1,0 +1,54 @@
+<view class='editaddress'>
+  <image class='address-img' src='/images/home.png'></image>
+  <text class='address-text'>请填写收货地址</text>
+</view>
+
+<view class='guiwei-order'>
+  <text class='guiwei-title'>GiGwi贵为</text>
+  <view class='guiwei-item'>
+    <image class='list-img' src='/images/home.png'></image>
+    <view class='list-right'>
+      <text class='list-name'>拉伸叫叫系列</text>
+      <text class='list-kind'>颜色：蓝色</text>
+      <view class='list-bottom'>
+        <text class='list-num'>x1</text>
+        <text class='list-price'>¥38.00</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='youhuiquan'>
+  <text class='youhuiquan-text'>优惠券</text>
+  <view class='youhuiquan-right'>
+  <text class='youhuiquan-hint'>目前无可用优惠券</text>
+  </view>
+</view>
+
+<view class='zhifu'>
+  <text class='zhifu-text'>支付方式</text>
+  <view class='zhifu-right'>
+  <text class='zhifu-hint'>在线支付</text>
+  </view>
+</view>
+
+<view class='yunfei'>
+  <text class='yunfei-text'>运费</text>
+  <view class='yunfei-right'>
+  <text class='yunfei-hint'>请先选择收货地址</text>
+  </view>
+</view>
+
+<view class='liuyan'>
+  <text class='liuyan-text'>详细地址：</text>
+  <textarea class='liuyan-detail' placeholder="请买家填写备注" bindinput="voteTitle"></textarea>
+</view>
+
+<view class='nav-bottom'>
+<view class='nav-bottom-left'>
+<text class='num'>共1件</text>
+<text class='price'>总计：¥38.00</text>
+</view>
+<text class='submit'>提交</text>
+</view>
+

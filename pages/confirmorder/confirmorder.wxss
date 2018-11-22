@@ -1,0 +1,173 @@
+page{
+  background: #f2f2f2;
+}
+.editaddress{
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-top: 20rpx;
+}
+.address-img{
+  width: 50rpx;
+  height: 50rpx;
+}
+.address-text{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.guiwei-order{
+  display: flex;
+  flex-flow: column;
+  margin-top: 30rpx;
+}
+.list1_title{
+  display: flex;
+  flex-flow: column;
+}
+.guiwei-title{
+  background: white;
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+
+.guiwei-item{
+  padding: 10rpx;
+  display: flex;
+  flex-flow: row;
+}
+
+.list-img{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.list-right{
+  margin-left: 20rpx;
+  margin-right: 50rpx;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+}
+
+.list-name{
+  font-size: 30rpx;
+}
+
+.list-kind{
+  font-size: 30rpx;
+}
+
+.list-bottom{
+  width: 100%;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.list-num{
+  color: grey;
+}
+
+.list-price{
+  color: red;
+}
+.youhuiquan{
+  background: white;
+  padding: 30rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+
+.youhuiquan-right{
+  color: grey;
+}
+
+
+.zhifu{
+  margin-top: 2rpx;
+  background: white;
+  padding: 30rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+
+.zhifu-right{
+  color: grey;
+}
+
+.yunfei{
+  margin-top: 2rpx;
+  background: white;
+  padding: 30rpx;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+
+.yunfei-right{
+  color: grey;
+}
+
+
+.liuyan {
+  display: flex;
+  flex-flow: row;
+  font-size: 30rpx;
+  padding: 20rpx;
+  margin-top: 4rpx;
+  background: white;
+}
+
+.liuyan-title {
+  font-size: 30rpx;
+}
+
+.liuyan-detail {
+  font-size: 30rpx;
+}
+
+.nav-bottom{
+   display: flex;
+  flex-flow: row;
+  margin-top: 10px;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  bottom: 0px;
+  background-color: white;
+}
+.nav-bottom-left{
+  display: flex;
+  flex-flow: row;
+  font-size: 34rpx;
+  width: 70%;
+}
+.num{
+  
+  margin-left: 20rpx;
+ display: flex;
+  align-items: center;
+}
+.price{
+   display: flex;
+  align-items: center;
+  color: red;
+  margin-left: 30rpx;  
+}
+.submit{
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  background: red;
+  color: white;
+}

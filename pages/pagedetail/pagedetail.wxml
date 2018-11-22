@@ -1,0 +1,63 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots='true'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='line-detail'>
+  <text class='name-detail'>拉伸叫叫系列</text>
+  <view class='kind-detail'>
+    <text class='kind-text'>狗玩具</text>
+    <text class='share-text'>分享</text>
+  </view>
+  <view class='price-detail'>
+    <text class='price-text'>¥38</text>
+    <text class='num-text'>月销2笔</text>
+    <text class='place-text'>江苏南京</text>
+  </view>
+</view>
+<view class='btn-choice'>
+  <text class='choice-text'>选择</text>
+  <text class='size-text'>规格</text>
+</view>
+
+<view class="navbar">
+  <block wx:for="{{tabs}}" wx:key="*this">
+    <view id="{{index}}" class="navbar__item {{activeIndex == index ? 'navbar__item_on' : ''}}" bindtap="navTabClick">
+      <view class="navbar__title">{{item.name}}</view>
+    </view>
+  </block>
+  <view class="navbar__slider" style="width: {{sliderWidth}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+</view>
+
+<swiper class='tab-swiper' current="{{activeIndex}}" duration="300" bindchange="bindChange">
+  <swiper-item class='tab-item'>
+    <view>商品详情</view>
+  </swiper-item>
+  <swiper-item class='tab-item'>
+    <view>评价</view>
+  </swiper-item>
+</swiper>
+
+<view class='nav-bottom'>
+  <view class='nav-left-bottom'>
+    <view class='left-item'>
+      <image class='img' src='/images/home.png'></image>
+      <text class='text'>首页</text>
+    </view>
+    <view class='left-item'>
+      <image class='img' src='/images/home.png'></image>
+      <text class='text'>收藏</text>
+    </view>
+     <view class='left-item'>
+      <image class='img' src='/images/home.png'></image>
+      <text class='text'>客服</text>
+    </view>
+  </view>
+  <view class='nav-right-bottom'>
+    <text class='add-shopcart'>加入购物车</text>
+    <text class='buy-immidiately'>立刻购买</text>
+  </view>
+</view>

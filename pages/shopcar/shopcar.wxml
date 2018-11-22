@@ -1,0 +1,39 @@
+<view class="cart-box">
+  <view class="item" wx:for="{{list}}" wx:key="list">
+    <icon class='icon' type="{{item.select}}" size="26" data-index="{{index}}" data-select="{{item.select}}" bindtap="change" />
+    <image src="{{item.url}}" class="goods-img" mode="widthFix"></image>
+    <view class="goods-info">
+      <view class="row">
+        <view class="goods-name">{{item.name}}</view>
+        <view class="goods-type">
+          {{item.style}}
+        </view>
+        <text class="goods-price">￥{{item.price}}</text>
+      </view>
+    </view>
+   
+    <view class='right-num'>
+      <view class="num-box">
+        <view class="btn-groups">
+          <button class="goods-btn btn-minus" data-index="{{index}}" data-num="{{item.num}}" bindtap="subtraction">—</button>
+          <view class="num">{{item.num}}</view>
+          <button class="goods-btn btn-add" data-index="{{index}}" data-num="{{item.num}}" bindtap="addtion">+</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cart-fixbar">
+  <view class="allSelect">
+    <icon class='allicon' type="{{allSelect}}" size="26" data-select="{{allSelect}}" bindtap="allSelect" />
+    <view class="allSelect-text">全选</view>
+  </view>
+  <view class='delete'>删除</view>
+  <view class="count">
+    <text>合计：￥</text>{{count}}
+  </view>
+  <view class="order">
+    去结算
+    <text class="allnum">({{num}})</text>
+  </view>
+</view>

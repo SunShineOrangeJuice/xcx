@@ -1,0 +1,50 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input"  disabled='true' placeholder="搜索入口" bindtap="wxSearchTab"/>
+    </view>
+  </view>
+</view>
+
+<view>{{ searchValue}}</view>
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots='true'>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='line' >
+  <view class='imageItem1'>
+    <image class='img' src='/images/guiwei.png'></image>
+    <view class='guiweitxt'>贵为</view>
+  </view>
+  <view class='imageItem2'>
+    <image class='img' src='/images/aokai.png'></image>
+    <view class='guiweitxt'>奥凯</view>
+  </view>
+  <view class='imageItem3'>
+    <image class='img' src='/images/naruishi.png'></image>
+    <view class='guiweitxt'>纳瑞施</view>
+  </view>
+</view>
+
+<view class='foot' >
+  <view class='foot-title'>
+    <text class='new-project'>新品上市</text>
+    <text class='text-more'>更多 </text>
+  </view>
+</view>
+
+<view class='goodsList'>
+  <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+    <view class='goods-item' wx:for="{{itemList}}">
+      <image class='goods-img' src='{{item.img}}'></image>
+      <view class='goods-name'>{{item.name}}</view>
+      <view class='goods-price'>{{item.price}}</view>
+    </view>
+  </scroll-view>
+</view>

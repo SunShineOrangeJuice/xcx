@@ -1,0 +1,67 @@
+/* pages/address/address.wxss */
+
+page {
+  background: #f2f2f2;
+}
+
+.addresslist {
+  margin-top: 20rpx;
+  height: 100%;
+}
+
+.addresslist-item {
+  padding: 30rpx;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-flow: row;
+}
+
+.address-left {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.address-tel {
+  font-size: 28rpx;
+  color: black;
+}
+
+.address-right {
+  width: 15%;
+  display: flex;
+  flex-flow: row;
+}
+
+.address-edit {
+  margin: auto;
+  font-size: 28rpx;
+  color: black;
+}
+
+.address-detail {
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: black;
+}
+.red{
+  font-size: 28rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  background: rgb(245, 175, 175);
+  color: rgb(245, 65, 52);
+}
+.newaddress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  bottom: 0px;
+}

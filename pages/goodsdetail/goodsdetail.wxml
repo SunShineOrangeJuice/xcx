@@ -1,0 +1,69 @@
+<!--主盒子-->
+<view class="container">
+  <!--左侧栏-->
+  <view class="nav_left">
+    <view>
+      <button bindtap="onChangeShowState">奥凯</button>
+    </view>
+    <block wx:for="{{cateItems}}">
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="bright_view_hide {{showView1?'bright_view_show':''}}">
+        <view class="nav_left_items {{curNav == item.cate_id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.cate_id}}">{{item.cate_name}}</view>
+      </view>
+    </block>
+    <view>
+      <button bindtap="onChangeguiwei">贵为</button>
+    </view>
+    <block wx:for="{{cateItems}}">
+      <!--当前项的id等于item项的id，那个就是当前状态-->
+      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
+      <view class="bright_guiwei_hide {{showView2?'bright_guiwei_show':''}}">
+        <view class="nav_left_items {{curNav == item.cate_id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.cate_id}}">{{item.cate_name}}</view>
+      </view>
+    </block>
+  </view>
+  <!--右侧栏-->
+  <view class="nav_right">
+    <text class='right-title'>汪星人</text>
+    <!--如果有数据，才遍历项-->
+    <scroll-view class='scroll' scroll-y="true">
+      <view wx:if="{{cateItems[curIndex].ishaveChild}}">
+        <block wx:for="{{cateItems[curIndex].children}}">
+          <view class="nav_right_items">
+            <!--界面跳转 -->
+
+            <image class='item-img' src="{{item.image}}"  bindtap='todetail'></image>
+
+            <view class='right-view'>
+              <text class='item-name'  bindtap='todetail'>{{item.name}}</text>
+              <view class='right-bottom-view'>
+                <text class='item-price'  bindtap='todetail'>¥24.00</text>
+              </view>
+            </view>
+
+            <view class="num-box">
+              <view class="btn-groups">
+                <button class="goods-btn btn-minus" data-index="{{index}}" data-num="{{item.num}}" bindtap="subtraction">—</button>
+                <view class="num">1</view>
+                <button class="goods-btn btn-add" data-index="{{index}}" data-num="{{item.num}}" bindtap="addtion">+</button>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <!--如果无数据，则显示数据-->
+      <view class="nodata_text" wx:else>该分类暂无数据</view>
+    </scroll-view>
+
+  </view>
+  <view class='nav-bottom'>
+    <!--如果无数据，则显示数据-->
+    <image class='shopcart' src='/images/shopcart_red.png'></image>
+    <view class='bottom-right'>
+      <text class='text'>合计</text>
+      <text class='text-price'>¥0.00</text>
+      <button class='bottom-button'>结算</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<view class='textline'>
+  <text class='text-title'>收货人</text>
+</view>
+<view class='textline1'>
+  <text class='text-title'>手机号码</text>
+</view>
+<view class='textline1'>
+  <text class='text-title'>所在地区</text>
+</view>
+<view class='textline2'>
+  <text class='xiangxidizhi'>详细地址：</text>
+  <textarea class='address-detail' placeholder="请填写详细地址" bindinput="voteTitle"></textarea>
+</view>
+
+<view class='save' bindtap='save'>保存</view>

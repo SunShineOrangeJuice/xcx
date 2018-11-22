@@ -1,0 +1,21 @@
+<!--pages/ceshi/ceshi.wxml-->
+
+<!-- <view class='father'>
+<image class='image' src='/images/guiwei.png' ></image>
+</view>
+
+<view class='item'>
+
+<text class='item1'>{{text}}</text> 
+</view>  -->
+
+<!--pages/mine/mine.wxml-->
+
+<view class='password'>
+<input class='input' password='true' value='123456'></input>
+<image class='image' src='/images/home.png'></image>
+</view>
+
+<view class='box'>
+<text class='btn_blue tv_submit'>ceshi</text>
+</view>

@@ -1,0 +1,16 @@
+<view class='addresslist'>
+  <scroll-view class="scroll-view_y" scroll-y style="width: auto;overflow:hidden;">
+    <view class='addresslist-item'>
+      <view class='address-left'>
+        <view class='address-tel'>林 11111111111</view>
+        <view class='address-detail'><text class='red'>默认</text> 南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市南京市</view>
+      </view>
+      
+      <view class='address-right'>
+        <view class='address-edit'>编辑</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class='newaddress' bindtap='addaddress'>新建地址</view>
+</view>
