@@ -19,3 +19,10 @@
 <view class='box'>
 <text class='btn_blue tv_submit'>ceshi</text>
 </view>
+<checkbox-group bindchange="checkboxChange" >
+       <label >
+           <checkbox value="123"></checkbox>
+           <view>123</view>
+           <!-- 其他布局代码 -->    
+       </label>   
+   </checkbox-group>
