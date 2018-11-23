@@ -11,7 +11,8 @@
     "pages/personal/personal",
     "pages/addaddress/addaddress",
     "pages/confirmorder/confirmorder",
-    "pages/ceshi/ceshi"
+    "pages/ceshi/ceshi",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
